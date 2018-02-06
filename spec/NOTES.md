@@ -13,7 +13,7 @@ How to Build a CLI Gem
 
 => Hello!  Welcome to Emo Lister.  Here is a list of recent podcasts recorded:
 
-1. Ep. 123 - Buddy Nielsen (Senses Fail)Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)
+1. Ep. 123 - Buddy Nielsen (Senses Fail)
 2. Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)
 3. Ep. 121 - Jessi Frick (Father/Daughter Records)
 4. Ep. 120 - Charles Cardello (BiFocal Media)
