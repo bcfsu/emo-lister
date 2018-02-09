@@ -1,14 +1,18 @@
 class EmoListerCLI
 
+  #use the colorize method here to make the puts look cool
+
   def call
     puts "Hello! Welcome to Emo Lister"
     puts "Here are the most recent podcast episodes..."
 
     list_podcasts
     menu
+    goodbye
   end
 
   def list_podcasts
+    #This should instantiate a Scraper class
     puts "1. Ep. 123 - Buddy Nielsen (Senses Fail)"
     puts "2. Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)"
     puts "3. Ep. 121 - Jessi Frick (Father/Daughter Records)"
@@ -27,10 +31,17 @@ class EmoListerCLI
       when "list"
         list_podcasts
       when input.to_i > 0
-        puts "Here is the summary for the podcast you chose"
+        #FIXME: This command does not run.
+        #validate input here using the size or length method
         #insert logic to choose episode to hear more about
+        puts "Here is the summary for the podcast you chose"
+
       end
     end
+  end
+
+  def goodbye
+    puts "Thanks for checking this out!"
   end
 
 end
