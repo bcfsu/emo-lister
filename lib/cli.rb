@@ -4,7 +4,6 @@ class EmoListerCLI
 
   def call
     puts "Hello! Welcome to Emo Lister"
-    puts "Here are the most recent podcast episodes..."
 
     list_podcasts
     menu
@@ -12,13 +11,19 @@ class EmoListerCLI
   end
 
   def list_podcasts
+
+    puts "Here are the most recent podcast episodes..."
+
     #This should instantiate a Scraper class
-    puts "1. Ep. 123 - Buddy Nielsen (Senses Fail)"
-    puts "2. Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)"
-    puts "3. Ep. 121 - Jessi Frick (Father/Daughter Records)"
-    puts "4. Ep. 120 - Charles Cardello (BiFocal Media)"
-    puts "5. Ep. 119 - Arty Shepherd (Mind Over Matter, Errortype: 11, Saint Vitus Bar)"
-    puts ""
+    #
+    # puts "1. Ep. 123 - Buddy Nielsen (Senses Fail)"
+    # puts "2. Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)"
+    # puts "3. Ep. 121 - Jessi Frick (Father/Daughter Records)"
+    # puts "4. Ep. 120 - Charles Cardello (BiFocal Media)"
+    # puts "5. Ep. 119 - Arty Shepherd (Mind Over Matter, Errortype: 11, Saint Vitus Bar)"
+    # puts ""
+    episodes = EmoScraper.scrape_episodes
+
 
   end
 
