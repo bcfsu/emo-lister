@@ -7,11 +7,15 @@ class EmoScraper
     episodes.collect do |episode|
       index = "www.washedupemo.com"
       title = episode.text
-      url = index + episode.attr("href")
-      Episode.new(title, url)
+      url = index + episode.attr("href").strip
+      new_epi = Episode.new(title, url)
+
+      #Next Steps: Scrape the summary page and write it to the created Episode
+
+      # episode_page = Nokogiri::HTML(open('http://www.washedupemo.com/news/2018/5/ep-123-buddy-nielsen-senses-fail'))
+      # new_epi.summary = episode_page.css(p.description).text
     end
 
-    #how will you scrape the episode summary?
   end
 
 end

@@ -13,19 +13,12 @@ class EmoListerCLI
   def list_podcasts
 
     puts "Here are the most recent podcast episodes..."
-
-    #This should instantiate a Scraper class
-    #
-    # puts "1. Ep. 123 - Buddy Nielsen (Senses Fail)"
-    # puts "2. Ep. 122 - Dylan Mattheisen (Tiny Moving Parts)"
-    # puts "3. Ep. 121 - Jessi Frick (Father/Daughter Records)"
-    # puts "4. Ep. 120 - Charles Cardello (BiFocal Media)"
-    # puts "5. Ep. 119 - Arty Shepherd (Mind Over Matter, Errortype: 11, Saint Vitus Bar)"
-    # puts ""
+    puts ""
     episodes = EmoScraper.scrape_episodes
     episodes.each_with_index do |epi, idx|
       puts "#{idx + 1}. #{epi.name}"
     end
+    puts ""
   end
 
   def menu
@@ -40,7 +33,7 @@ class EmoListerCLI
         #FIXME: This command does not run.
         #validate input here using the size or length method
         #insert logic to choose episode to hear more about
-        puts "Here is the summary for the podcast you chose"
+        puts "Here is the summary for podcast #{input}"
 
       end
     end
