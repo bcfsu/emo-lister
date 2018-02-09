@@ -23,8 +23,9 @@ class EmoListerCLI
     # puts "5. Ep. 119 - Arty Shepherd (Mind Over Matter, Errortype: 11, Saint Vitus Bar)"
     # puts ""
     episodes = EmoScraper.scrape_episodes
-
-
+    episodes.each_with_index do |epi, idx|
+      puts "#{idx + 1}. #{epi.name}"
+    end
   end
 
   def menu

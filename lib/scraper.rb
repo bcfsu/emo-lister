@@ -10,6 +10,8 @@ class EmoScraper
       url = index + episode.attr("href")
       Episode.new(title, url)
     end
+
+    #how will you scrape the episode summary?
   end
 
 end
