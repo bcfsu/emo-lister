@@ -11,7 +11,6 @@ class EmoListerCLI
   end
 
   def list_podcasts
-
     puts "Here are the most recent podcast episodes..."
     puts ""
     episodes = EmoScraper.scrape_episodes

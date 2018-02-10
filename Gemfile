@@ -9,3 +9,6 @@ gem 'rake'
 gem 'pry'
 gem 'require_all'
 gem 'nokogiri'
+
+#The Gemfile specifies the gem libraries you will need, but does not require or load the gems.
+#The environment file requires Bundler, then installs the specified gems listed.
