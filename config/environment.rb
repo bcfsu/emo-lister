@@ -7,7 +7,6 @@ require_all './lib'
 
 require 'open-uri'
 
-
 # module EmoLister
 #   # Your code goes here...
 # end

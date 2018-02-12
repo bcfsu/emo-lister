@@ -28,12 +28,16 @@ class EmoListerCLI
       case input
       when "list"
         list_podcasts
-      when input.to_i > 0
-        #FIXME: This command does not run.
-        #validate input here using the size or length method
-        #insert logic to choose episode to hear more about
+      when "1"
         puts "Here is the summary for podcast #{input}"
-
+      when "2"
+        puts "Here is the summary for podcast #{input}"
+      when "3"
+        puts "Here is the summary for podcast #{input}"
+      when "4"
+        puts "Here is the summary for podcast #{input}"
+      when "5"
+        puts "Here is the summary for podcast #{input}"
       end
     end
   end
