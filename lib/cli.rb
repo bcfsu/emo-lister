@@ -29,15 +29,15 @@ class EmoListerCLI
       when "list"
         list_podcasts
       when "1"
-        puts "Here is the summary for podcast #{input}"
+        puts Episode.all[0].summary
       when "2"
-        puts "Here is the summary for podcast #{input}"
+        puts Episode.all[1].summary
       when "3"
-        puts "Here is the summary for podcast #{input}"
+        puts Episode.all[2].summary
       when "4"
-        puts "Here is the summary for podcast #{input}"
+        puts Episode.all[3].summary
       when "5"
-        puts "Here is the summary for podcast #{input}"
+        puts Episode.all[4].summary
       else
         puts "Not sure what you mean! Please select the episode you'd like to read more about, list, or exit."
       end
