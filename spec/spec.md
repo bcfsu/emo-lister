@@ -6,5 +6,6 @@ Specs:
 
 - [ x ] Pull data from an external source
   Data from WashedUpEmo.com is scraped.
-  
-- [ ] Implement both list and detail views
+
+- [ x ] Implement both list and detail views
+  The user receives a list of podcasts to choose from. When the user chooses a podcast, the summary is outputted to the terminal.
