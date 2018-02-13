@@ -14,7 +14,8 @@ class Episode
     @@all
   end
 
-  def open_site
-    #open the website to the instance of Episode
+  def open_url
+    #TODO: Add a feature that allows the user to open the website
+    #from the terminal
   end
 end
