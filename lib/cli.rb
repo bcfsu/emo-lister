@@ -38,6 +38,8 @@ class EmoListerCLI
         puts "Here is the summary for podcast #{input}"
       when "5"
         puts "Here is the summary for podcast #{input}"
+      else
+        puts "Not sure what you mean! Please select the episode you'd like to read more about, list, or exit."
       end
     end
   end

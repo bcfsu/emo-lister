@@ -9,11 +9,22 @@ class EmoScraper
       title = episode.text
       url = index + episode.attr("href").strip
       new_epi = Episode.new(title, url)
+    end
 
-      #Next Steps: Scrape the summary page and write it to the created Episode
+    #Next Steps: Scrape the summary page and assign each Episode a :summary
 
+    Episode.all.collect do |episode|
+      # episode_page = Nokogiri::HTML(open("#{episode.url}"))
       # episode_page = Nokogiri::HTML(open('http://www.washedupemo.com/news/2018/5/ep-123-buddy-nielsen-senses-fail'))
-      # new_epi.summary = episode_page.css(p.description).text
+      # binding.pry
+      # FIXME: Capybara::Poltergeist::StatusFailError ... The visit command is not functioning,
+      # I am getting a DNS timeout
+
+      session = Capybara::Session.new(:poltergeist)
+      session.visit("http://www.washedupemo.com/news/2018/5/ep-123-buddy-nielsen-senses-fail")
+      element = session.first("p.description")
+      episode.summary = element.text.strip
+
     end
 
   end
@@ -22,9 +33,10 @@ end
 
 
 # Expectations:
-# washed_up_emo = EmoScraper.new("www.washedupemo.com").scrape
+# washedupemo = EmoScraper.scrape_episodes
+#
 # washedupemo.episodes.first.title => "Ep. 123 - Buddy Nielsen (Senses Fail)"
 
-# Another idea...
-# washed_up = EmoScraper.new.scrape_episodes => [array of Episode instances with :titles and :urls]
+# washed_up = EmoScraper
+# washed_up.scrape_episodes => [array of Episode instances with an assigned :title :url and :summary]
 # washed_up.scrape_awards(year) => [array of Awards with :category :winners and :runnerups]
