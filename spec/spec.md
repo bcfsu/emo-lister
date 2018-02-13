@@ -1,6 +1,10 @@
 # Specifications for the CLI Assessment
 
 Specs:
-- [ ] Have a CLI for interfacing with the application
-- [ ] Pull data from an external source
+- [ x ] Have a CLI for interfacing with the application
+  My CLI greets the user, and provides her with a list of the most recent podcasts from a website called Washed Up Emo.  The CLI asks the user if she would like to read more about a particular episode.  When she types the corresponding number, the CLI provides her with an episode summary.  The user is not able to type a number on the list that does not exist, she will be prompted with valid entries instead.
+
+- [ x ] Pull data from an external source
+  Data from WashedUpEmo.com is scraped.
+  
 - [ ] Implement both list and detail views

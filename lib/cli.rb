@@ -30,16 +30,27 @@ class EmoListerCLI
         list_podcasts
       when "1"
         puts Episode.all[0].summary
+        puts ""
+        menu
       when "2"
         puts Episode.all[1].summary
+        puts ""
+        menu
       when "3"
         puts Episode.all[2].summary
+        puts ""
+        menu
       when "4"
         puts Episode.all[3].summary
+        puts ""
+        menu
       when "5"
         puts Episode.all[4].summary
+        puts ""
+        menu
       else
         puts "Not sure what you mean! Please select the episode you'd like to read more about, list, or exit."
+        puts ""
       end
     end
   end

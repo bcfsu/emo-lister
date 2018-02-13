@@ -14,7 +14,7 @@ class Episode
     @@all
   end
 
-  def open
+  def open_site
     #open the website to the instance of Episode
   end
 end

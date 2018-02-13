@@ -13,12 +13,12 @@ class EmoScraper
       new_epi
     end
 
-    #Next Steps: Scrape the summary page and assign each Episode a :summary
+    # TODO: Next Steps: Scrape the summary page and assign each Episode a :summary
 
     # Episode.all.collect do |episode|
+
     #   # episode_page = Nokogiri::HTML(open("#{episode.url}"))
-    #   # episode_page = Nokogiri::HTML(open('http://www.washedupemo.com/news/2018/5/ep-123-buddy-nielsen-senses-fail'))
-    #   # binding.pry
+
     #   # FIXME: Capybara::Poltergeist::StatusFailError ... The visit command is not functioning,
     #   # I am getting a DNS timeout
     #
@@ -26,7 +26,7 @@ class EmoScraper
     #   session.visit("http://www.washedupemo.com/news/2018/5/ep-123-buddy-nielsen-senses-fail")
     #   element = session.first("p.description")
     #   episode.summary = element.text.strip
-    #
+    #   episode
     # end
 
     # This method should be able to return Episode.all
