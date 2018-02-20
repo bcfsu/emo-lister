@@ -1,8 +1,6 @@
 # EmoLister
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/emo_lister`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Emo Lister!  This app will show you information gathered from the website washedupemo.com.  The app will show you the most recent podcast interviews recorded, as well as a summary of each interview.  Stay tuned for more features, such as listing the recent years' Emo Awards.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run this app from the command line.  The list of recent podcasts will be ordered by number. Select the number of the episode you would like a summary of, or type 'list' to show the episode titles again, or 'exit' to leave the app.
 
 ## Development
 
