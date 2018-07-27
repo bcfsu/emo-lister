@@ -2,6 +2,8 @@
 
 Welcome to Emo Lister!  This gem will populate recent podcasts scraped from the website washedupemo.com.  The gem will show you the most recent podcast interviews recorded, as well as a summary of each interview.  Stay tuned for more features, such as listing the recent years' Emo Awards categories and winners.
 
+Demo video: https://youtu.be/5_D783vVHHE
+
 ## Installation
 
 Add this line to your application's Gemfile:
